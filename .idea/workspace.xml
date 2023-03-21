@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ac1ae2-b433-4665-805c-487efbd32b03" name="Changes" comment="Первый коммит">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
+    <list default="true" id="d6ac1ae2-b433-4665-805c-487efbd32b03" name="Changes" comment="Задание №1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
     </list>
@@ -67,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679338208056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Задание №1">
+      <created>1679405451069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679405451069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Первый коммит" />
-    <option name="LAST_COMMIT_MESSAGE" value="Первый коммит" />
+    <MESSAGE value="Задание №1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №1" />
   </component>
 </project>

@@ -10,13 +10,18 @@ public class Application {
 
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)){;
-             statement.setInt(1, 4);
+             statement.setInt(1, 5);
              ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                String firstName = "First name: " + resultSet.getString(1);
-                String lastName = "Last name: " + resultSet.getString(2);
-                String gender = "Gender: " + resultSet.getString(3);
-                String city = "City: " + resultSet.getString(4);
+                String firstName = "Имя: " + resultSet.getString(1);
+                String lastName = "Фамилия: " + resultSet.getString(2);
+                String gender = "Пол: " + resultSet.getString(3);
+                String city ="Город: ";
+                if (resultSet.getString(4) == null) {
+                    city += "БОМЖ";
+                } else {
+                    city += resultSet.getString(4);
+                }
 
                 System.out.println(firstName);
                 System.out.println(lastName);
