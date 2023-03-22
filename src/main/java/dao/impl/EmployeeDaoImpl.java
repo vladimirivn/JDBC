@@ -33,10 +33,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 //            statement.executeQuery();
             int x = statement.executeUpdate();
 
-            if (x > 0)
+            if (x > 0) {
                 System.out.println("Запись добавлена");
-            else
+            }
+            else {
                 System.out.println("Запись не добавлена");
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -107,10 +109,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
             int x = statement.executeUpdate();
 
-            if (x > 0)
+            if (x > 0) {
                 System.out.println("Запись обновлена");
-            else
+            }
+            else {
                 System.out.println("Запись не обновлена");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -124,10 +128,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
             statement.setInt(1, id);
             int x = statement.executeUpdate();
 
-            if (x > 0)
+            if (x > 0) {
                 System.out.println("Запись уалена");
-            else
+            }
+            else {
                 System.out.println("Запись не удалена");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
