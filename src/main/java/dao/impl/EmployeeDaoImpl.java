@@ -30,7 +30,13 @@ public class EmployeeDaoImpl implements EmployeeDao {
             statement.setString(3, employee.getGender());
             statement.setInt(4, employee.getAge());
             statement.setLong(5, employee.getCiti_id());
-            statement.executeQuery();
+//            statement.executeQuery();
+            int x = statement.executeUpdate();
+
+            if (x > 0)
+                System.out.println("Запись добавлена");
+            else
+                System.out.println("Запись не добавлена");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -99,7 +105,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
             statement.setInt(5, employee.getCiti_id());
             statement.setInt(6, id);
 
-            statement.executeUpdate();
+            int x = statement.executeUpdate();
+
+            if (x > 0)
+                System.out.println("Запись обновлена");
+            else
+                System.out.println("Запись не обновлена");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -111,7 +122,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setInt(1, id);
-            statement.executeQuery();
+            int x = statement.executeUpdate();
+
+            if (x > 0)
+                System.out.println("Запись уалена");
+            else
+                System.out.println("Запись не удалена");
         } catch (SQLException e) {
             e.printStackTrace();
         }
